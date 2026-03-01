@@ -17,9 +17,9 @@
     "description": {
       "type": "string"
     },
-    "url": {
+    "image": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",
