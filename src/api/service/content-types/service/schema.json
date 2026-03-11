@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoSection": {
+      "type": "component",
+      "component": "content.video-text-box",
+      "repeatable": true
+    }
+  }
+}
