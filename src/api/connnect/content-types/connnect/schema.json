@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "connnects",
+  "info": {
+    "singularName": "connnect",
+    "pluralName": "connnects",
+    "displayName": "Connnect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contact_type": {
+      "type": "string"
+    },
+    "contact_value": {
+      "type": "string"
+    }
+  }
+}

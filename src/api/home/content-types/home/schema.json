@@ -10,5 +10,26 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "bannerArea": {
+      "type": "component",
+      "component": "content.main-sub",
+      "repeatable": false
+    },
+    "aboutArea": {
+      "type": "component",
+      "component": "content.main-sub",
+      "repeatable": false
+    },
+    "servicesArea": {
+      "type": "component",
+      "component": "content.main-sub",
+      "repeatable": false
+    },
+    "productArea": {
+      "type": "component",
+      "component": "content.main-sub",
+      "repeatable": false
+    }
+  }
 }
