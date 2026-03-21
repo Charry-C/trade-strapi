@@ -556,6 +556,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
   attributes: {
     aboutArea: Schema.Attribute.Component<'content.main-sub', false>;
+    advantageArea: Schema.Attribute.Component<'content.icon-card', true>;
     bannerArea: Schema.Attribute.Component<'content.main-sub', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -30,6 +30,11 @@
       "type": "component",
       "component": "content.main-sub",
       "repeatable": false
+    },
+    "advantageArea": {
+      "type": "component",
+      "component": "content.icon-card",
+      "repeatable": true
     }
   }
 }

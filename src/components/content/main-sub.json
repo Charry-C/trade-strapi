@@ -30,6 +30,21 @@
         "videos",
         "audios"
       ]
+    },
+    "card": {
+      "type": "component",
+      "component": "content.icon-card",
+      "repeatable": true
+    },
+    "titleCard": {
+      "type": "component",
+      "component": "content.text-card",
+      "repeatable": false
+    },
+    "numArea": {
+      "type": "component",
+      "component": "content.num-card",
+      "repeatable": true
     }
   },
   "config": {}

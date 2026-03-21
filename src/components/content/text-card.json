@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_text_cards",
+  "info": {
+    "displayName": "textCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_num_cards",
+  "info": {
+    "displayName": "numCard"
+  },
+  "options": {},
+  "attributes": {
+    "mainNum": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
