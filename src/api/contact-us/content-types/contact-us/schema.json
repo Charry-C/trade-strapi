@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_uses",
+  "info": {
+    "singularName": "contact-us",
+    "pluralName": "contact-uses",
+    "displayName": "ContactUs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "content.main-sub",
+      "repeatable": false
+    },
+    "connect": {
+      "type": "component",
+      "component": "content.connect-way",
+      "repeatable": false
+    }
+  }
+}

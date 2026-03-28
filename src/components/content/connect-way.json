@@ -5,6 +5,19 @@
     "icon": "phone"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "commonConnect": {
+      "type": "json"
+    },
+    "mediaConnect": {
+      "type": "json"
+    }
+  },
   "config": {}
 }

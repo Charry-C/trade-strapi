@@ -6,7 +6,12 @@ export interface ContentConnectWay extends Struct.ComponentSchema {
     displayName: 'connectWay';
     icon: 'phone';
   };
-  attributes: {};
+  attributes: {
+    commonConnect: Schema.Attribute.JSON;
+    description: Schema.Attribute.Text;
+    mediaConnect: Schema.Attribute.JSON;
+    title: Schema.Attribute.String;
+  };
 }
 
 export interface ContentIconCard extends Struct.ComponentSchema {
