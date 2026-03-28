@@ -5,26 +5,6 @@
     "icon": "television"
   },
   "options": {},
-  "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "subTitle": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    }
-  },
+  "attributes": {},
   "config": {}
 }

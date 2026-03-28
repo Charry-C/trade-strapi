@@ -54,6 +54,31 @@ export interface ContentNumCard extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentPicCard extends Struct.ComponentSchema {
+  collectionName: 'components_content_pic_cards';
+  info: {
+    displayName: 'picCard';
+  };
+  attributes: {
+    cardImg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContentServiceCom extends Struct.ComponentSchema {
+  collectionName: 'components_content_service_coms';
+  info: {
+    displayName: 'serviceCom';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    show: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subList: Schema.Attribute.JSON;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentTextCard extends Struct.ComponentSchema {
   collectionName: 'components_content_text_cards';
   info: {
@@ -72,12 +97,7 @@ export interface ContentVideoTextBox extends Struct.ComponentSchema {
     displayName: 'videoTextBox';
     icon: 'television';
   };
-  attributes: {
-    description: Schema.Attribute.Text;
-    subTitle: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-    video: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
+  attributes: {};
 }
 
 export interface SharedSeo extends Struct.ComponentSchema {
@@ -100,6 +120,8 @@ declare module '@strapi/strapi' {
       'content.icon-card': ContentIconCard;
       'content.main-sub': ContentMainSub;
       'content.num-card': ContentNumCard;
+      'content.pic-card': ContentPicCard;
+      'content.service-com': ContentServiceCom;
       'content.text-card': ContentTextCard;
       'content.video-text-box': ContentVideoTextBox;
       'shared.seo': SharedSeo;

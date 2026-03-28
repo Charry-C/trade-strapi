@@ -24,6 +24,36 @@
       },
       "component": "content.main-sub",
       "repeatable": false
+    },
+    "main": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.main-sub",
+      "repeatable": false
+    },
+    "numsList": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.num-card",
+      "repeatable": true
+    },
+    "subMain": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.pic-card",
+      "repeatable": true
     }
   }
 }

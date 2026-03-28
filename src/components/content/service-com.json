@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_content_service_coms",
+  "info": {
+    "displayName": "serviceCom"
+  },
+  "options": {},
+  "attributes": {
+    "show": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "subList": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

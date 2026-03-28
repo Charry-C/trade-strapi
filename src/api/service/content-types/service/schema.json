@@ -15,14 +15,24 @@
     }
   },
   "attributes": {
-    "videoSection": {
+    "banner": {
       "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "content.video-text-box",
+      "component": "content.main-sub",
+      "repeatable": false
+    },
+    "servicesSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.service-com",
       "repeatable": true
     }
   }

@@ -62,6 +62,22 @@
       },
       "component": "shared.seo",
       "repeatable": false
+    },
+    "connectWay": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "siteIntro": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
