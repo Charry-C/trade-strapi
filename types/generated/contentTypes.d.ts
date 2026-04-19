@@ -765,6 +765,44 @@ export interface ApiProductPageProductPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiProductStyleProductStyle
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'product_styles';
+  info: {
+    displayName: 'ProductStyle';
+    pluralName: 'product-styles';
+    singularName: 'product-style';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    coverImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    detailImages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-style.product-style'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    sort: Schema.Attribute.Integer;
+    specs: Schema.Attribute.JSON;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -811,6 +849,10 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    product_styles: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-style.product-style'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     specs: Schema.Attribute.JSON &
       Schema.Attribute.SetPluginOptions<{
@@ -1385,6 +1427,7 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
       'api::product-page.product-page': ApiProductPageProductPage;
+      'api::product-style.product-style': ApiProductStyleProductStyle;
       'api::product.product': ApiProductProduct;
       'api::service.service': ApiServiceService;
       'plugin::content-releases.release': PluginContentReleasesRelease;

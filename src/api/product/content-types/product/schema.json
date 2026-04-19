@@ -59,6 +59,11 @@
           "localized": true
         }
       }
+    },
+    "product_styles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-style.product-style"
     }
   }
 }

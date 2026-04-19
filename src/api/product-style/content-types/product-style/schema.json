@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_styles",
+  "info": {
+    "singularName": "product-style",
+    "pluralName": "product-styles",
+    "displayName": "ProductStyle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "detailImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "specs": {
+      "type": "json"
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}
