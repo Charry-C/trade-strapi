@@ -64,6 +64,16 @@
       },
       "component": "content.icon-card",
       "repeatable": true
+    },
+    "productionProcess": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.production-process",
+      "repeatable": false
     }
   }
 }

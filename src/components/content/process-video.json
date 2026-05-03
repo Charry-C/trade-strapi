@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_content_process_videos",
+  "info": {
+    "displayName": "processVideo"
+  },
+  "options": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "posterUrl": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "subTitle": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

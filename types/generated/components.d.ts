@@ -71,6 +71,34 @@ export interface ContentPicCard extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentProcessVideo extends Struct.ComponentSchema {
+  collectionName: 'components_content_process_videos';
+  info: {
+    displayName: 'processVideo';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    posterUrl: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    sort: Schema.Attribute.Integer;
+    subTitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    videoUrl: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface ContentProductionProcess extends Struct.ComponentSchema {
+  collectionName: 'components_content_production_processes';
+  info: {
+    displayName: 'productionProcess';
+  };
+  attributes: {
+    processVideo: Schema.Attribute.Component<'content.process-video', true>;
+    subTitle: Schema.Attribute.Text;
+    tip: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentServiceCom extends Struct.ComponentSchema {
   collectionName: 'components_content_service_coms';
   info: {
@@ -126,6 +154,8 @@ declare module '@strapi/strapi' {
       'content.main-sub': ContentMainSub;
       'content.num-card': ContentNumCard;
       'content.pic-card': ContentPicCard;
+      'content.process-video': ContentProcessVideo;
+      'content.production-process': ContentProductionProcess;
       'content.service-com': ContentServiceCom;
       'content.text-card': ContentTextCard;
       'content.video-text-box': ContentVideoTextBox;

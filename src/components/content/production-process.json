@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_content_production_processes",
+  "info": {
+    "displayName": "productionProcess"
+  },
+  "options": {},
+  "attributes": {
+    "tip": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "text"
+    },
+    "processVideo": {
+      "type": "component",
+      "component": "content.process-video",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

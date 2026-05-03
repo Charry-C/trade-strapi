@@ -715,6 +715,15 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    productionProcess: Schema.Attribute.Component<
+      'content.production-process',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     servicesArea: Schema.Attribute.Component<'content.main-sub', false> &
       Schema.Attribute.SetPluginOptions<{
